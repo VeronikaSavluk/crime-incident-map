@@ -1,0 +1,152 @@
+:root {
+--text-color: #FFFFFF;
+--background-color: #000000;
+}
+
+* {
+    box-sizing: border-box;
+}
+h1,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+button {
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E5E5E5;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.container {
+position: relative;
+overflow: hidden;
+margin: 0;
+padding: 56px 120px 70px;
+width: 1280px;
+height: 800px;
+background-color: var(--background-color);
+}
+
+.title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.12;
+}
+
+.topography {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.range {
+    position: absolute;
+    bottom: 70px;
+    left: 120px;
+    width: 1040px;
+    height: 1px;
+    outline: none;
+    opacity: 0.70;
+    -webkit-appearance: none;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: #FFFFFF;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.number {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.total-statistic li {
+display: flex;
+flex-direction: column;
+margin-left: 10px;
+margin-bottom: 24px;
+padding: 0;
+width: 126px;
+font-size: 14px;
+z-index: 100;
+}
+.map::before {
+    content: url('../image/map.svg');
+    width: 687px;
+    height: 457px;
+}
+
+.map {
+    position: relative;
+    margin-left: 140px;
+    width: 687px;
+    height: 457px;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 687px;
+    height: 457px;
+}
+.date {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.btn {
+    position: absolute;
+    bottom: 210px;
+    right: 130px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+}
+
+.play::before {
+    content: url('../image/play.svg');
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+}
+
+.pause::before {
+    content: url('../image/pause.svg');
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+}
+
+.histogram {
+    position: absolute;
+    bottom: 70px;
+    left: 120px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 6px;
+    width: 1040px;
+}
